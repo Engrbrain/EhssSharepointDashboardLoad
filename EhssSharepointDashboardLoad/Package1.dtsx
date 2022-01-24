@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/20/2021 11:55:52 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PRINT"
+  DTS:CreatorName="PRINT\Administrator"
+  DTS:DTSID="{413977D3-EF3F-4A82-A6FC-94237DE92CF2}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.107"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{B3B43B2E-5473-4B87-B15F-7A0E26E33968}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OData Source]"
+      DTS:CreationName="ODATA"
+      DTS:DTSID="{5DDAC5D9-6F02-429A-A994-0EF0FB65A867}"
+      DTS:ObjectName="OData Source">
+      <DTS:ObjectData>
+        <ODataConnectionManager
+          UserName="dataloadmgr@oriental-er.com"
+          Url="https://orientalerl.sharepoint.com/HR/_vti_bin/listdata.svc/"
+          ConnectionString="Service Document Url=https://orientalerl.sharepoint.com/HR/_vti_bin/listdata.svc/;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjExLDBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwMTBiZTVmNTYzQGxpdmUuY29tLDAjLmZ8bWVtYmVyc2hpcHxkYXRhbG9hZG1nckBvcmllbnRhbC1lci5jb20sMTMyNzYzNTUyNTQwMDAwMDAwLDEzMjc2MzUxNDg4MDAwMDAwMCwxMzI3NjQ0MTY1NDI5MTk3NjIsMC4wLjAuMCw0LGJkMzQwMTJjLTViMGUtNGRiNi1hY2EwLWE2MzNhYzc3N2Q4YywsLDZjNWVmMDlmLTYwN2ItMzAwMC0zNTNmLTE5NGRhMjBlMDA2MCw2YzVlZjA5Zi02MDdiLTMwMDAtMzUzZi0xOTRkYTIwZTAwNjAsLDAsMCwwLCwsLDI2NTA0Njc3NDM5OTk5OTk5OTksMCwsLCwsLCwwLE5RUkR1ZTA1RkVycmw4ZVdYQkU2dmVyOU1oQlBEWVhNSGZYUklIb2xkQ2IwbXZ2Zk9FV0JmQmFMMWVlTmJNT3M2RnQ4S3U5eEhVRFFvR1lrTmE4UEJNTkZTM01SZ05INDdUdC9pNG9PTks1c0M2b2Y4ZS9CN1RIVDZVNEhKbEQ1Y2ErM1AzbG1XdlpSK05pZ2ZaTmRMcjNaWm04OFkrYmhLaWVCNURVNkRxdzhsb29STU1iUFdiUjFUTHpBUnJBUUVMaUJ5Wnp1TExYTldBbHFpQWRvaHgzWVRneDZjYlZTaU02bUVkdzVSbTdqSmhJU1hwK0tFTDZpREVZSFF5VmNzVkNaWVJBU0x2L3grL2d2bkRxU0pldHpRaHljVElhSmhXMnZ1WGFLNURUUVV1b0NURXFIdkdCYlhkTTNaWVhGSTRvNHRwV25qTGNtMFVwbFpUMi9XQT09PC9TUD4=&quot;;User ID=dataloadmgr@oriental-er.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+          MicrosoftOnlineServicesAuth="True"
+          AuthType="MicrosoftOnlineService">
+          <Password
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsPhY77A46kq33vg+PD/AdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC+jF9JvviuKR+b1prnp82lEfop61B3PseVNaj8sZBuwAAAAAAOgAAAAAIAACAAAADF1UxFTwOcG5CzYP4EcpPyjpETDpTW0rHSLREz4QtugiAAAABGQuZI3a+zK9npF5j0ppA0JygXR30svdTjQ51gHetv6EAAAABXfmIyQR8rtwtnHDD6oVY7pVTBImeBZtWy9veKMcIIJpzALgaDDps3pVijw95nJBxW+XWeQpHY7l0LtLVT/Ve4</Password>
+        </ODataConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{91407A4F-AD38-4382-9CE0-1DFF2D1455F5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\OData Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="OData Source Component;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Read data from OData services"
+              name="OData Source"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Name of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="CollectionName"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The default maximum length for a string that has no maxlength specified in the schema."
+                  name="DefaultStringLength">4000</property>
+                <property
+                  dataType="System.String"
+                  description="Query in the url. "
+                  expressionType="Notify"
+                  name="Query"></property>
+                <property
+                  dataType="System.String"
+                  description="Resource path of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="ResourcePath"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="When set to true, use the resource path as requested collection; otherwise, use the collection name."
+                  expressionType="Notify"
+                  name="UseResourcePath">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.OData</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OData Source.Connections[Connection]"
+                  description="Connection to OData Service"
+                  name="Connection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OData Source.Outputs[Output]"
+                  name="Output">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OData Source.Outputs[Error output]"
+                  isErrorOut="true"
+                  name="Error output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Data Flow Task\OData Source"
+          TopLeft="530,290" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "EhssSharepointDashboardLoad", "EhssSharepointDashboardLoad\EhssSharepointDashboardLoad.dtproj", "{4D9B3631-874F-450C-BDAB-4D92E4D37DCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D9B3631-874F-450C-BDAB-4D92E4D37DCF}.Development|Default.ActiveCfg = Development
+		{4D9B3631-874F-450C-BDAB-4D92E4D37DCF}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7F198B7-8E73-46D9-B443-CB1350607FCA}
+	EndGlobalSection
+EndGlobal
